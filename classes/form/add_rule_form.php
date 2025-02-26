@@ -60,7 +60,7 @@ class add_rule_form extends dynamic_form {
 
         // Cohort field.
         $options = [];
-        foreach (cohort_get_all_cohorts($page=0, $perpage=1000)['cohorts'] as $cohort) {
+        foreach (cohort_get_all_cohorts($page=0, $perpage=0)['cohorts'] as $cohort) {
             $options[$cohort->id] = $cohort->name;
         }
 
